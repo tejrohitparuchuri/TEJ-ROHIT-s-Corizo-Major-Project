@@ -107,6 +107,8 @@ Products:
 Admin Control:
 <img width="300" alt="admin dashboard" src="https://github.com/user-attachments/assets/80305345-28c4-4e8c-9de8-a96817dfc757" />
 
+Database Control:
+<img width="300" alt="firebase" src="https://github.com/user-attachments/assets/dbc95774-4c8d-4c64-8b0c-69a5fa33a546" />
 
 
 
