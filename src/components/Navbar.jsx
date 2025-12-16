@@ -125,6 +125,9 @@ const Navbar = () => {
                             {user.email === 'admin@gmail.com' && (
                                 <Link to="/admin" style={{ color: 'var(--primary-color)', fontWeight: 'bold' }}>Admin</Link>
                             )}
+                            <Link to="/orders" style={{ display: 'flex', alignItems: 'center', gap: '5px', fontWeight: '500' }}>
+                                <FaHistory /> History
+                            </Link>
                             <span style={{ fontWeight: 'bold', color: 'var(--primary-color)' }}>
                                 {userData?.name || user.displayName || 'User'}
                             </span>
@@ -248,6 +251,7 @@ const Navbar = () => {
                                 {user.email === 'admin@gmail.com' && (
                                     <Link to="/admin" onClick={() => setIsMenuOpen(false)} style={{ color: 'var(--primary-color)', fontWeight: 'bold' }}>Admin Dashboard</Link>
                                 )}
+                                <Link to="/orders" onClick={() => setIsMenuOpen(false)}>Order History</Link>
                             </div>
                         ) : (
                             <Link to="/signin" onClick={() => setIsMenuOpen(false)}>Sign In</Link>

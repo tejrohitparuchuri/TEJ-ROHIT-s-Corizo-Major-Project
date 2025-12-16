@@ -10,6 +10,7 @@ import SignUp from './pages/SignUp';
 import Admin from './pages/Admin';
 import Settings from './pages/Settings';
 import OrderSuccess from './pages/OrderSuccess';
+import OrderHistory from './pages/OrderHistory';
 
 function App() {
   const { isDark } = useTheme();
@@ -27,6 +28,7 @@ function App() {
           <Route path="/admin" element={<Admin />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/success" element={<OrderSuccess />} />
+          <Route path="/orders" element={<OrderHistory />} />
         </Routes>
       </main>
     </div>

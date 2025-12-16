@@ -3,7 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useCart } from '../context/CartContext';
 import { useAuth } from '../context/AuthContext';
 import { Link, useNavigate } from 'react-router-dom';
-import { FaTrash, FaMinus, FaPlus, FaArrowLeft, FaCreditCard, FaSpinner } from 'react-icons/fa';
+import { FaTrash, FaMinus, FaPlus, FaArrowLeft, FaCreditCard, FaSpinner, FaHistory } from 'react-icons/fa';
+import { db } from '../firebase';
+import { collection, addDoc } from 'firebase/firestore';
 
 const Cart = () => {
     const { items, removeFromCart, updateQuantity, clearCart, cartTotal } = useCart();
@@ -11,7 +13,7 @@ const Cart = () => {
     const navigate = useNavigate();
     const [isProcessing, setIsProcessing] = useState(false);
 
-    const handleCheckout = () => {
+    const handleCheckout = async () => {
         if (!user) {
             navigate('/signin');
             return;
@@ -19,28 +21,57 @@ const Cart = () => {
 
         setIsProcessing(true);
 
-        // Simulate payment processing
-        setTimeout(() => {
+        try {
             const orderDetails = {
                 items: [...items],
                 total: cartTotal,
                 date: new Date().toISOString(),
                 orderId: Math.floor(Math.random() * 1000000),
+                userId: user.uid, // Add User ID for querying
                 user: {
                     name: userData?.name || user.displayName || 'Customer',
                     email: user.email
                 }
             };
 
-            clearCart();
+            // Save to Firestore 'orders' collection
+            await addDoc(collection(db, 'orders'), orderDetails);
+
+            // Simulate slight delay for UX
+            setTimeout(() => {
+                clearCart();
+                setIsProcessing(false);
+                navigate('/success', { state: { orderDetails } });
+            }, 1500);
+
+        } catch (error) {
+            console.error("Error creating order: ", error);
             setIsProcessing(false);
-            navigate('/success', { state: { orderDetails } });
-        }, 2000);
+            alert("Failed to process order. Please try again.");
+        }
     };
 
     return (
         <div className="container" style={{ paddingTop: 'calc(var(--header-height) + 40px)', paddingBottom: '40px' }}>
-            <h2 style={{ fontSize: '2rem', marginBottom: '30px', borderBottom: '2px solid var(--border-color)', paddingBottom: '10px' }}>Your Cart</h2>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px', borderBottom: '2px solid var(--border-color)', paddingBottom: '10px' }}>
+                <h2 style={{ fontSize: '2rem', margin: 0 }}>Your Cart</h2>
+                {user && (
+                    <Link to="/orders" style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '8px',
+                        textDecoration: 'none',
+                        color: 'var(--primary-color)',
+                        fontWeight: 'bold',
+                        padding: '8px 15px',
+                        borderRadius: '20px',
+                        border: '1px solid var(--border-color)',
+                        background: 'var(--surface-color)'
+                    }}>
+                        <FaHistory /> Order History
+                    </Link>
+                )}
+            </div>
 
             {items.length === 0 ? (
                 <div style={{ textAlign: 'center', padding: '60px 0' }}>

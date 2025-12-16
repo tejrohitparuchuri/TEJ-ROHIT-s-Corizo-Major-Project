@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation, Link, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaCheckCircle, FaPrint, FaHome } from 'react-icons/fa';
+import { FaCheckCircle, FaPrint, FaHome, FaHistory } from 'react-icons/fa';
 
 const OrderSuccess = () => {
     const location = useLocation();
@@ -102,11 +102,11 @@ const OrderSuccess = () => {
                     </div>
                 </div>
 
-                <div style={{ display: 'flex', gap: '20px', justifyContent: 'center' }}>
+                <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
                     <button
                         onClick={handlePrint}
                         style={{
-                            padding: '12px 30px',
+                            padding: '12px 25px',
                             borderRadius: '25px',
                             border: '2px solid #eee',
                             background: 'transparent',
@@ -120,10 +120,30 @@ const OrderSuccess = () => {
                     >
                         <FaPrint /> Print Bill
                     </button>
+
+                    <Link to="/orders" style={{ textDecoration: 'none' }}>
+                        <button
+                            style={{
+                                padding: '12px 25px',
+                                borderRadius: '25px',
+                                border: '2px solid var(--primary-color)',
+                                background: 'transparent',
+                                color: 'var(--primary-color)',
+                                fontWeight: 'bold',
+                                cursor: 'pointer',
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '10px'
+                            }}
+                        >
+                            <FaHistory /> View History
+                        </button>
+                    </Link>
+
                     <Link to="/" style={{ textDecoration: 'none' }}>
                         <button
                             style={{
-                                padding: '12px 30px',
+                                padding: '12px 25px',
                                 borderRadius: '25px',
                                 border: 'none',
                                 background: 'var(--primary-color)',

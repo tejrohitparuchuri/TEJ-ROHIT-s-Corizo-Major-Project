@@ -3,7 +3,7 @@ import { useAuth } from '../context/AuthContext';
 import { useProducts } from '../context/ProductContext';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { FaEdit, FaTrash, FaPlus, FaTimes, FaSave, FaUsers, FaShoppingCart, FaBox } from 'react-icons/fa';
+import { FaEdit, FaTrash, FaPlus, FaTimes, FaSave, FaUsers, FaShoppingCart, FaBox, FaClipboardList } from 'react-icons/fa';
 import { db } from '../firebase';
 import { collection, getDocs, onSnapshot } from 'firebase/firestore';
 
@@ -13,7 +13,7 @@ const Admin = () => {
     const navigate = useNavigate();
 
     const [usersCount, setUsersCount] = useState(0);
-    const [stats, setStats] = useState({ users: 0, products: 0, orders: 0 }); // Orders is mock for now or cart based
+    const [stats, setStats] = useState({ users: 0, products: 0, activeCarts: 0, completedOrders: 0 });
     const [usersList, setUsersList] = useState([]);
 
     const [isEditing, setIsEditing] = useState(null);
@@ -43,16 +43,24 @@ const Admin = () => {
         // Update product count
         setStats(prev => ({ ...prev, products: products.length }));
 
-        // Mock Orders/Carts Count (Active Carts)
+        // Active Carts Count
         const unsubscribeCarts = onSnapshot(collection(db, "carts"), (snapshot) => {
-            setStats(prev => ({ ...prev, orders: snapshot.size })); // Using active carts as a proxy for "Orders" or activity
+            setStats(prev => ({ ...prev, activeCarts: snapshot.size }));
+        });
+
+        // Completed Orders Count
+        const unsubscribeOrders = onSnapshot(collection(db, "orders"), (snapshot) => {
+            setStats(prev => ({ ...prev, completedOrders: snapshot.size }));
         });
 
         return () => {
             unsubscribeUsers();
             unsubscribeCarts();
+            unsubscribeOrders();
         };
     }, [user, products]);
+
+    // ... (rest of the code)
 
     // Redirect if not admin
     useEffect(() => {
@@ -132,7 +140,8 @@ const Admin = () => {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', marginBottom: '40px' }}>
                 <StatCard icon={<FaUsers />} title="Total Users" value={stats.users} color="#3b82f6" />
                 <StatCard icon={<FaBox />} title="Total Products" value={stats.products} color="#10b981" />
-                <StatCard icon={<FaShoppingCart />} title="Active Carts" value={stats.orders} color="#f59e0b" />
+                <StatCard icon={<FaShoppingCart />} title="Active Carts" value={stats.activeCarts} color="#f59e0b" />
+                <StatCard icon={<FaClipboardList />} title="Total Orders" value={stats.completedOrders} color="#8b5cf6" />
             </div>
 
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px' }}>

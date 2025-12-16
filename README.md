@@ -3,7 +3,7 @@
 A fully functional **Premium E-Commerce Web App** built using **React.js, Vite, Firebase, and Framer Motion**. This platform includes secure user authentication, specific admin dashboard with live stats, product management, real-time cart synchronization across devices, and a payment simulation system.
 
 ### 🚀 **Live & Working**
-- **🌐 Live Demo:** [http://ptr-store-corizo-xy9z.surge.sh](http://ptr-store-corizo-xy9z.surge.sh)
+- **🌐 Live Demo:** [https://corizo-edutech.web.app](https://corizo-edutech.web.app)
 - **🔗 GitHub:** [https://github.com/tejrohitparuchuri/TEJ-ROHIT-s-Corizo-Major-Project](https://github.com/tejrohitparuchuri/TEJ-ROHIT-s-Corizo-Major-Project)
 
 ---
@@ -14,26 +14,57 @@ A fully functional **Premium E-Commerce Web App** built using **React.js, Vite, 
 <table align="center">
   <tr>
     <td align="center">
-      <img src="https://source.unsplash.com/random/800x600/?shopping,website" width="400" />
+      <img src="./web%20preview/homepage.png" width="400" />
       <br />
-      <b>Home Page Landing</b>
+      <b>Homepage Landing</b>
     </td>
     <td align="center">
-      <img src="https://source.unsplash.com/random/800x600/?dashboard,analytics" width="400" />
+      <img src="./web%20preview/admin_dashboard_new.png" width="400" />
       <br />
       <b>Admin Dashboard</b>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="https://source.unsplash.com/random/800x600/?cart,checkout" width="400" />
+      <img src="./web%20preview/sign%20in.png" width="400" />
+      <br />
+      <b>Sign In</b>
+    </td>
+    <td align="center">
+      <img src="./web%20preview/register.png" width="400" />
+      <br />
+      <b>Registration</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./web%20preview/search.png" width="400" />
+      <br />
+      <b>Search & Filter</b>
+    </td>
+    <td align="center">
+      <img src="./web%20preview/cart_new.png" width="400" />
       <br />
       <b>Shopping Cart</b>
     </td>
+  </tr>
+  <tr>
     <td align="center">
-      <img src="https://source.unsplash.com/random/800x600/?bill,invoice" width="400" />
+      <img src="./web%20preview/order_success.png" width="400" />
       <br />
-      <b>Order Receipt</b>
+      <b>Payment Success & Bill</b>
+    </td>
+    <td align="center">
+      <img src="./web%20preview/settings.png" width="400" />
+      <br />
+      <b>Settings & Profile</b>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="./web%20preview/firebase_firestore.png" width="400" />
+      <br />
+      <b>Firestore Database</b>
     </td>
   </tr>
 </table>

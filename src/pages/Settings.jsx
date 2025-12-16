@@ -2,6 +2,8 @@ import React from 'react';
 import { useTheme } from '../context/ThemeContext';
 import { useAuth } from '../context/AuthContext';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { FaBoxOpen } from 'react-icons/fa';
 
 const Settings = () => {
     const { isDark, toggleTheme } = useTheme();
@@ -67,6 +69,17 @@ const Settings = () => {
                         <p style={{ fontSize: '0.9rem', opacity: 0.7 }}>Sign in to view and manage your account details.</p>
                     )}
                 </div>
+
+                {user && (
+                    <div style={{ marginTop: '20px', borderTop: '1px solid var(--border-color)', paddingTop: '20px' }}>
+                        <Link to="/orders" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', textDecoration: 'none', color: 'var(--text-color)', padding: '10px', background: 'var(--bg-color)', borderRadius: '10px' }}>
+                            <span style={{ display: 'flex', alignItems: 'center', gap: '10px', fontWeight: 'bold' }}>
+                                <FaBoxOpen /> Order History
+                            </span>
+                            <span>&rarr;</span>
+                        </Link>
+                    </div>
+                )}
             </motion.div>
         </div>
     );
