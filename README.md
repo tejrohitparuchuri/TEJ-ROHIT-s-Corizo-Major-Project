@@ -3,7 +3,7 @@
 A fully functional **Premium E-Commerce Web App** built using **React.js, Vite, Firebase, and Framer Motion**. This platform includes secure user authentication, specific admin dashboard with live stats, product management, real-time cart synchronization across devices, and a payment simulation system.
 
 ### 🚀 **Live & Working**
-- **🌐 Live Demo:** [corizo-edutech.web.app)(corizo-edutech.web.app)
+- **🌐 Live Demo:** [[corizo-edutech.web.app)(corizo-edutech.web.app](https://corizo-edutech.web.app/))
 - **🔗 GitHub:** [https://github.com/tejrohitparuchuri/TEJ-ROHIT-s-Corizo-Major-Project](https://github.com/tejrohitparuchuri/TEJ-ROHIT-s-Corizo-Major-Project)
 
 
