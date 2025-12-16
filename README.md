@@ -6,39 +6,6 @@ A fully functional **Premium E-Commerce Web App** built using **React.js, Vite, 
 - **🌐 Live Demo:** [http://ptr-store-corizo-xy9z.surge.sh](http://ptr-store-corizo-xy9z.surge.sh)
 - **🔗 GitHub:** [https://github.com/tejrohitparuchuri/TEJ-ROHIT-s-Corizo-Major-Project](https://github.com/tejrohitparuchuri/TEJ-ROHIT-s-Corizo-Major-Project)
 
----
-
-## 📸 Preview
-> *A modern, responsive interface designed for the best user experience.*
-
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="https://source.unsplash.com/random/800x600/?shopping,website" width="400" />
-      <br />
-      <b>Home Page Landing</b>
-    </td>
-    <td align="center">
-      <img src="https://source.unsplash.com/random/800x600/?dashboard,analytics" width="400" />
-      <br />
-      <b>Admin Dashboard</b>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="https://source.unsplash.com/random/800x600/?cart,checkout" width="400" />
-      <br />
-      <b>Shopping Cart</b>
-    </td>
-    <td align="center">
-      <img src="https://source.unsplash.com/random/800x600/?bill,invoice" width="400" />
-      <br />
-      <b>Order Receipt</b>
-    </td>
-  </tr>
-</table>
-
----
 
 ## 📁 Project Structure
 
@@ -115,3 +82,34 @@ PTR-Store/
 ### 📬 Contact
 - 📧 **Email:** [tejrohitparuchuri@gmail.com](mailto:tejrohitparuchuri@gmail.com)
 - 🔗 **GitHub:** [https://github.com/tejrohitparuchuri](https://github.com/tejrohitparuchuri)
+
+Preview Pages:
+
+Homepage
+<img width="1359" height="767" alt="homepage" src="https://github.com/user-attachments/assets/290b8fff-96a8-47a3-928e-af3fe8da7841" />
+
+Accounts:
+  Sign in:
+  <img width="1364" height="679" alt="sign in" src="https://github.com/user-attachments/assets/0cecb702-a23d-4dfa-a0ec-1e33082bf878" />
+  Register:
+  <img width="1365" height="767" alt="register" src="https://github.com/user-attachments/assets/ddad0ad1-ae40-4984-b698-61728be617d9" />
+  Account info:
+  <img width="1365" height="767" alt="acc info" src="https://github.com/user-attachments/assets/00106ad7-5f40-4a06-b246-88a87f94ab45" />
+
+Products:
+  Search:
+  <img width="1365" height="767" alt="search" src="https://github.com/user-attachments/assets/c64e1456-f2e0-403d-8320-b605bebbb1a9" />
+  Cart:
+  <img width="1365" height="767" alt="cart" src="https://github.com/user-attachments/assets/b8c1da2a-56de-49f8-8ddb-7cffbaed2a07" />
+  Purchase and Bill:
+  <img width="1359" height="767" alt="bill generation" src="https://github.com/user-attachments/assets/c2548bcd-bdc5-4af8-90a0-aa8d9f923c76" />
+
+Admin Control:
+<img width="1357" height="767" alt="admin dashboard" src="https://github.com/user-attachments/assets/80305345-28c4-4e8c-9de8-a96817dfc757" />
+
+
+
+
+
+
+
