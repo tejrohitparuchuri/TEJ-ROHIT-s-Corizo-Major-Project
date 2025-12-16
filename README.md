@@ -101,7 +101,7 @@ Products:
   <img width="300" alt="search" src="https://github.com/user-attachments/assets/c64e1456-f2e0-403d-8320-b605bebbb1a9" />
   Cart:
   <img width="300" alt="cart" src="https://github.com/user-attachments/assets/b8c1da2a-56de-49f8-8ddb-7cffbaed2a07" />
-  Purchase and Bill:
+  Purchase and Bill with history:
   <img width="300" alt="bill generation" src="https://github.com/user-attachments/assets/c2548bcd-bdc5-4af8-90a0-aa8d9f923c76" />
 
 Admin Control:
