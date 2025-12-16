@@ -86,7 +86,7 @@ PTR-Store/
 Preview Pages:
 
 Homepage
-<img width="1359" height="767" alt="homepage" src="https://github.com/user-attachments/assets/290b8fff-96a8-47a3-928e-af3fe8da7841" />
+<img width="300" alt="homepage" src="https://github.com/user-attachments/assets/290b8fff-96a8-47a3-928e-af3fe8da7841" />
 
 Accounts:
   Sign in:
