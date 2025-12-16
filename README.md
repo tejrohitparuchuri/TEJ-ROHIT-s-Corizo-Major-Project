@@ -90,22 +90,22 @@ Homepage
 
 Accounts:
   Sign in:
-  <img width="1364" height="679" alt="sign in" src="https://github.com/user-attachments/assets/0cecb702-a23d-4dfa-a0ec-1e33082bf878" />
+  <img width="300" alt="sign in" src="https://github.com/user-attachments/assets/0cecb702-a23d-4dfa-a0ec-1e33082bf878" />
   Register:
-  <img width="1365" height="767" alt="register" src="https://github.com/user-attachments/assets/ddad0ad1-ae40-4984-b698-61728be617d9" />
+  <img width="300" alt="register" src="https://github.com/user-attachments/assets/ddad0ad1-ae40-4984-b698-61728be617d9" />
   Account info:
-  <img width="1365" height="767" alt="acc info" src="https://github.com/user-attachments/assets/00106ad7-5f40-4a06-b246-88a87f94ab45" />
+  <img width="300" alt="acc info" src="https://github.com/user-attachments/assets/00106ad7-5f40-4a06-b246-88a87f94ab45" />
 
 Products:
   Search:
-  <img width="1365" height="767" alt="search" src="https://github.com/user-attachments/assets/c64e1456-f2e0-403d-8320-b605bebbb1a9" />
+  <img width="300" alt="search" src="https://github.com/user-attachments/assets/c64e1456-f2e0-403d-8320-b605bebbb1a9" />
   Cart:
-  <img width="1365" height="767" alt="cart" src="https://github.com/user-attachments/assets/b8c1da2a-56de-49f8-8ddb-7cffbaed2a07" />
+  <img width="300" alt="cart" src="https://github.com/user-attachments/assets/b8c1da2a-56de-49f8-8ddb-7cffbaed2a07" />
   Purchase and Bill:
-  <img width="1359" height="767" alt="bill generation" src="https://github.com/user-attachments/assets/c2548bcd-bdc5-4af8-90a0-aa8d9f923c76" />
+  <img width="300" alt="bill generation" src="https://github.com/user-attachments/assets/c2548bcd-bdc5-4af8-90a0-aa8d9f923c76" />
 
 Admin Control:
-<img width="1357" height="767" alt="admin dashboard" src="https://github.com/user-attachments/assets/80305345-28c4-4e8c-9de8-a96817dfc757" />
+<img width="300" alt="admin dashboard" src="https://github.com/user-attachments/assets/80305345-28c4-4e8c-9de8-a96817dfc757" />
 
 
 
