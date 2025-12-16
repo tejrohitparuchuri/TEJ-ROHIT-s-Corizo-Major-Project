@@ -11,9 +11,32 @@ A fully functional **Premium E-Commerce Web App** built using **React.js, Vite, 
 ## 📸 Preview
 > *A modern, responsive interface designed for the best user experience.*
 
-| Home Page | Admin Dashboard |
-|-----------|-----------------|
-| ![Home](https://source.unsplash.com/random/800x600/?shopping,website) | ![Admin](https://source.unsplash.com/random/800x600/?dashboard,analytics) |
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://source.unsplash.com/random/800x600/?shopping,website" width="400" />
+      <br />
+      <b>Home Page Landing</b>
+    </td>
+    <td align="center">
+      <img src="https://source.unsplash.com/random/800x600/?dashboard,analytics" width="400" />
+      <br />
+      <b>Admin Dashboard</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://source.unsplash.com/random/800x600/?cart,checkout" width="400" />
+      <br />
+      <b>Shopping Cart</b>
+    </td>
+    <td align="center">
+      <img src="https://source.unsplash.com/random/800x600/?bill,invoice" width="400" />
+      <br />
+      <b>Order Receipt</b>
+    </td>
+  </tr>
+</table>
 
 ---
 
