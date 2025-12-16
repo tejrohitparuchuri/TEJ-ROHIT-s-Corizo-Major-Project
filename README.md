@@ -4,7 +4,7 @@ A fully functional **Premium E-Commerce Web App** built using **React.js, Vite, 
 
 ### 🚀 **Live & Working**
 - **🌐 Live Demo:** [corizo-edutech.web.app](https://corizo-edutech.web.app/)
-- **🔗 GitHub:** [https://github.com/tejrohitparuchuri/TEJ-ROHIT-s-Corizo-Major-Project](https://github.com/tejrohitparuchuri/TEJ-ROHIT-s-Corizo-Major-Project)
+- **🔗 GitHub:**    [https://github.com/tejrohitparuchuri/TEJ-ROHIT-s-Corizo-Major-Project](https://github.com/tejrohitparuchuri/TEJ-ROHIT-s-Corizo-Major-Project)
 
 
 ## 📁 Project Structure
